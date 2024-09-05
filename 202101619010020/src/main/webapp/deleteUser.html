@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Delete User From Mysql Table</title>
+</head>
+<body>
+	<h1>Delete User From Mysql Table</h1>
+	
+	<h2>Delete by ID</h2>
+	<form action="deleteUser" method="POST">
+		<input type="hidden" name="formNum" value="1"/>
+		<label for="uid">Enter ID To Delete</label><br>
+		<input type="number" name="uid" id="uid"/><br><br>
+		
+		<input type="submit" value="Delete"/>
+	</form><br><br><br>
+	
+	<h2>Delete by Username</h2>
+	<form action="deleteUser" method="POST">
+		<input type="hidden" name="formNum" value="2"/>
+		<label for="username">Enter Username To Delete</label><br>
+		<input type="text" name="uname" id="username"/><br><br>
+		
+		<input type="submit" value="Delete"/>
+	</form>
+</body>
+</html>
